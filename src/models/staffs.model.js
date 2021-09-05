@@ -5,14 +5,6 @@ const staff = (sequelize, Sequelize) => {
     "staff",
     {
       name: DataTypes.STRING,
-      lastname: DataTypes.STRING,
-      username: DataTypes.STRING,
-      phone: DataTypes.STRING,
-      email: DataTypes.STRING,
-      password: DataTypes.STRING,
-      type: DataTypes.STRING,
-      notes: DataTypes.STRING,
-      address: DataTypes.STRING,
       salary: DataTypes.NUMBER,
       createdDate: {
         type: "TIMESTAMP",

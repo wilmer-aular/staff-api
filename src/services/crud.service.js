@@ -12,6 +12,7 @@ const crudService = (nameModel) => {
       return await promiseHandler(model.findOne({ where: { [field]: value } }));
     },
     create: async (body) => {
+      console.log({ body, model, nameModel });
       return await promiseHandler(model.create(body));
     },
     update: async (id, body) => {
