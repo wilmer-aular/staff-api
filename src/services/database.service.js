@@ -16,5 +16,6 @@ const db = {};
 
 db.staff = require("../models/staffs.model")(sequelize, Sequelize);
 db.staffing = require("../models/staffing.model")(sequelize, Sequelize);
+db.user = require("../models/user.model")(sequelize, Sequelize);
 
 module.exports = db;
